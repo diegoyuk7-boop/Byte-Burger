@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: white;
+}
+
+header {
+    background-color: #ff9900;
+    color: #111;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #ff9900;
+    margin-bottom: 20px;
+}
+
+.sobre {
+    text-align: center;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.produtos h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.produto {
+    background-color: #222;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #444;
+    transition: 0.3s;
+}
+
+.produto:hover {
+    border-color: #ff9900;
+    transform: translateY(-5px);
+}
+
+.produto h3 {
+    color: #ff9900;
+    margin-bottom: 12px;
+}
+
+.produto p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.produto strong {
+    font-size: 20px;
+    color: #ff9900;
+}
+
+.instrucoes {
+    text-align: center;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 12px;
+    line-height: 1.8;
+}
+
+button {
+    background-color: #ff9900;
+    color: #111;
+    border: none;
+    padding: 15px 35px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #080808;
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 92%;
+    }
+}
